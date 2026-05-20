@@ -143,7 +143,6 @@ public class SchoolDaoImpl implements SchoolDao {
                 "where teacherId = (select tid from teacher where tFName = 'David' and tLName = 'Mitchell');\n" +
                 "delete from teacher\n" +
                 "where tFName = 'David' and tLName = 'Mitchell';";
-
         // YOUR CODE ENDS HERE
         jdbcTemplate.update(sql);
     }
